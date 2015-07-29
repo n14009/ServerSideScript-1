@@ -1,0 +1,18 @@
+ul {
+  list-style:none;
+}
+
+
+span.dan {
+  float:left;
+}
+
+span.dan2 {
+  display: block;
+  margin-left: 220px;
+}
+
+span.dan3 {
+  display: block;
+  margin-left: 440px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="charset" content="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./bootstrap.css">
+    <title>ロバのみみblog 入力</title>
+  </head>
+  <body>
+    <h1>ロバのみみblog</h1>
+    <form action="twig.php" method="POST">
+      <div class="form-group">
+        <label for="name">お名前</label>
+        <input class="form-control"type="text" name="name"><br>
+        <label for="article">記事本文</label>
+        <textarea class="form-control"name="article" rows="8" cols="40"></textarea>
+      <input class="btn btn-default" type="submit">
+      </div>
+    </form>
+  </body>
+</html>

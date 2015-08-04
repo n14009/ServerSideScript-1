@@ -3,6 +3,13 @@ require_once 'config.php';
 // セッションはじまり
 session_start();
 
+//ログイン状態のチェック
+if (!isset($_SESSION["USERID"])) {
+   header("Location:logout.php");
+   exit;
+}
+
+
 $now = date('Y-m-d H:i:s'); // 投稿時間を取得している。
 
 // 一旦セッションに投稿された情報を入れておく

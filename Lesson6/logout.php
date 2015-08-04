@@ -5,11 +5,12 @@ if (!isset($_SESSION["USERID"])) {
   header("Location:login.php");
   exit;
 }
+unset($_SESSION['USERID']);
+unset($_SESSION['PASSWORD']);
+
 echo "ログアウトしました。";
 
 
-unset($_SESSION['USERID']);
-unset($_SESSION['PASSWORD']);
 
 ?>
 <!DOCTYPE>

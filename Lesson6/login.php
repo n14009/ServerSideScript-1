@@ -8,8 +8,9 @@
 
   //ログインボタンが押されたとき
   if (isset($_POST["login"])) {
-
-   if ($_POST["userid"] == "root" && $_POST["password"] == "hogehoge" 
+   $salt = "mwefCMEP28DjwdW3lwdS239vVS";
+   $pass = crypt($_POST["password"],  $salt);
+   if ($_POST["userid"] == "root" && $pass == "mwPSzCPfXgSJU" 
    
     ) {
       session_regenerate_id(TRUE);

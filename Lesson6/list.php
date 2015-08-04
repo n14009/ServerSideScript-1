@@ -10,13 +10,13 @@ $data = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 // デバッグコード: var_dumpでどんなデータが取得できているか確認。
 
-header('Content-type: text/plain'); // おまじない
-var_dump($data); // 実際に表示している
+header('Content-type: text/html'); // おまじない
+//var_dump($data); // 実際に表示している
 
 // Twigにはめこむ
 // templatesディレクトリにある *output.tpl* の {{article}}と{{name}}と{{create_date}}に受け取ったデータを嵌め込んで表示する
 
-// print($twig->render('list.tpl',array('articles'=>$data)));
+ print($twig->render('list.tpl',array('articles'=>$data)));
 
 // データベースの接続を終了する
 unset($dbh);

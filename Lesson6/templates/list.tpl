@@ -19,7 +19,7 @@
         <tr>
           <td>{{article.create_date}}</td>
           <td>{{article.article}}</td>
-          <td><a href="#">リンク</a><td>
+          <td><a href="view.php?id={{article.id}}">リンク</a><td>
         </tr>
         {% endfor %}
       </tbody>
